@@ -1,0 +1,244 @@
+.categories
+    margin-top: 160px
+    &-wrapper
+        margin-top: 40px
+        display: flex
+        flex-direction: column
+        position: relative
+.category
+    display: flex
+    justify-content: space-between
+    padding: 15px 15px
+    text-decoration: none
+    cursor: pointer
+    &-wrapper
+        width: 798px
+        display: flex
+        justify-content: space-between
+    &-name
+        font-weight: 400
+        font-size: 18px
+        line-height: 100%
+        text-transform: uppercase
+        color: #171717
+    &-img
+        &__indie
+            width: 400px
+            position: absolute
+            right: 100px
+            top: 30px
+            opacity: 0
+            z-index: -1
+        &__alternative
+            width: 250px
+            position: absolute
+            left: 100px
+            bottom: 50px
+            opacity: 0
+            z-index: -1
+        &__blues
+            width: 220px
+            position: absolute
+            left: 140px
+            top: 40px
+            opacity: 0
+            z-index: -1
+            &-second
+                width: 250px
+                position: absolute
+                right: 140px
+                top: 100px
+                opacity: 0
+                z-index: -1
+        &__classic
+            width: 400px
+            position: absolute
+            right: 100px
+            top: 120px
+            opacity: 0
+            z-index: -1
+            &-second
+                width: 250px
+                position: absolute
+                filter: grayscale(100)
+                left: 100px
+                top: 60px
+                opacity: 0
+                z-index: -1
+        &__collections
+            width: 300px
+            position: absolute
+            right: 180px
+            top: 140px
+            opacity: 0
+            z-index: -1
+            &-second
+                width: 250px
+                position: absolute
+                left: 120px
+                top: 40px
+                opacity: 0
+                z-index: -1
+                filter: grayscale(100)
+        &__jazz
+            width: 250px
+            position: absolute
+            left: 100px
+            top: 180px
+            opacity: 0
+            z-index: -1
+            &-second
+                width: 400px
+                position: absolute
+                right: 100px
+                top: 30px
+                opacity: 0
+                z-index: -1
+        &__country
+            width: 300px
+            position: absolute
+            left: 100px
+            top: 80px
+            opacity: 0
+            z-index: -1
+            filter: grayscale(100)
+            &-second
+                width: 300px
+                position: absolute
+                right: 200px
+                top: 80px
+                opacity: 0
+                z-index: -1
+        &__electronic
+            width: 400px
+            position: absolute
+            right: 120px
+            top: 80px
+            opacity: 0
+            z-index: -1
+            filter: grayscale(100)
+            &-second
+                width: 250px
+                position: absolute
+                left: 100px
+                top: 80px
+                opacity: 0
+                z-index: -1
+        &__folk
+            width: 300px
+            position: absolute
+            left: 100px
+            top: 80px
+            opacity: 0
+            z-index: -1
+            &-second
+                width: 300px
+                position: absolute
+                right: 200px
+                top: 80px
+                opacity: 0
+                z-index: -1
+
+.category:hover
+    background-color: #F8F8F8
+    .category
+        &-wrapper
+            width: 814px
+        &-button
+            &__arrow
+                transform: rotate(50deg)
+                transition: 0.5s
+.category
+    &-indie:hover
+        .category
+            &-img
+                &__indie
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                &__alternative
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+    &-blues:hover
+        .category
+            &-img
+                &__blues
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-folk:hover
+        .category
+            &-img
+                &__folk
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-electronic:hover
+        .category
+            &-img
+                &__electronic
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-jazz:hover
+        .category
+            &-img
+                &__jazz
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-classic:hover
+        .category
+            &-img
+                &__classic
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-collections:hover
+        .category
+            &-img
+                &__collections
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+    &-country:hover
+        .category
+            &-img
+                &__country
+                    z-index: 1
+                    opacity: 100
+                    transition: 0.5s
+                    &-second
+                        z-index: 1
+                        opacity: 100
+                        transition: 0.5s
+
+.category-line
+    background-color: #C8C8C8
+    height: 1px
+    width: 100%

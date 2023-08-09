@@ -1,0 +1,72 @@
+.card
+    text-decoration: none
+    &-favorite
+        position: absolute
+        top: 20px
+        right: 20px
+        &__heart
+            opacity: 0
+        &__heart:hover
+            path
+                fill: #F30000
+                stroke: #F30000
+    &-header
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 130%
+        margin-top: 15px
+        max-width: 394px
+        color: #171717
+    &-text
+        font-weight: 400
+        font-size: 14px
+        line-height: 130%
+        color: #8F8F8F
+        max-width: 300px
+        margin-top: 10px
+        &-wrapper
+            text-decoration: none
+    &-price
+        font-weight: 400
+        font-size: 14px
+        line-height: 79.99%
+        color: #171717
+        max-width: 394px
+        margin-top: 15px
+    &-image
+        max-height: 100% 
+        width: auto
+        margin: auto
+        &-wrapper
+            display: flex
+            width: 100%
+            border: 1px solid #C8C8C8
+            height: 196px
+            text-align: center
+            position: relative
+            &-popular
+                max-width: 100%
+            &-favorite
+                position: relative
+            &-choice
+                width: 312px
+        &__arrivals
+            width: 394px 
+            height: 243px
+.card:hover
+    .card
+        &-favorite
+            &__heart
+                opacity: 100%
+
+// .swiper
+//     &-slide
+//         width: 394px !important
+//         &-active
+//             width: 504px !important
+//             img
+//                 width: 504px
+//                 height: 336px
+//     &-wrapper
+//         align-items: end

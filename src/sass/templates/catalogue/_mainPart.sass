@@ -1,0 +1,86 @@
+.catalogue
+    margin-top: 80px
+    &-wrapper
+        display: flex
+    &-main
+        margin-left: 80px
+        width: 100%
+        position: relative
+    &-search
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        &-wrapper
+            width: 87%
+            display: flex
+            justify-content: space-between
+        &__input
+            width: 76%
+            padding: 0 0 10px 50px
+            border: none
+            border-bottom: 1px solid #C4C4C4
+            background: none
+            font-size: 16px
+            outline: none
+            color: #171717
+        &__input::-moz-placeholder
+            color: #8F8F8F
+        &__input::-webkit-input-placeholder
+            color: #8F8F8F
+        &__sort
+            font-size: 16px
+            cursor: pointer
+            &-arrow
+                margin-left: 10px
+                transition: all 0.5s ease-out
+        &-buttons
+            &-wrapper
+                display: flex
+                align-items: center
+    &-more
+        margin-top: 60px
+        width: 100%
+    &-sort
+        padding: 20px
+        border: 1px solid #171717
+        background: #fff
+        position: absolute
+        z-index: 2
+        right: 0
+        top: 50px
+        &__item
+            margin-top: 10px
+            width: 130px
+            cursor: pointer
+            &-name
+                font-size: 16px
+            &-desc
+                font-size: 10px
+                margin-left: 9px
+                position: relative
+            &-desc:before
+                content: ''
+                width: 100%
+                height: 1px
+                background-color: #171717
+                position: absolute
+                left: 0
+                bottom: -6px
+                transform: scaleX(0)
+                transition: transform 0.25s
+                transform-origin: left
+        &__item:hover
+            .catalogue
+                &-sort
+                    &__item
+                        &-desc:before
+                            transform: scaleX(1)
+                            transition: transform 0.25s
+                            transform-origin: left
+
+.sort
+    &-chosen
+        color: red
+.none
+    display: none

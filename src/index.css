@@ -1,0 +1,7 @@
+.header-logo {
+    display: block;
+    background-image: url(http://localhost:3000/img/logo.svg);
+    background-size: cover;
+    background-position: center;
+    width: 98px;
+    height: 29px}

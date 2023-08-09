@@ -1,0 +1,41 @@
+.arrivals
+    margin-top: 150px
+    &-text
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 100%
+        color: #171717
+        width: 250px
+    &-wrapper
+        position: relative
+        margin-top: 40px
+        &-upper
+            display: flex
+            justify-content: space-between
+            width: 60.5%
+            align-items: center
+            position: absolute
+            right: 0
+            top: 20px
+            z-index: 10
+    &-card
+        display: flex
+        .card
+            margin-right: 20px
+            &-active
+                .card
+                    &-image
+                        max-width: 100%
+                        max-height: 100%
+                        &-wrapper
+                            height: 336px
+                            width: 504px
+            &-image
+                &-wrapper
+                    height: 243px
+                    &-arrival
+                        display: flex
+                        align-items: end
+                        height: 336px
+                        min-width: 394px

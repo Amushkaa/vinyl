@@ -1,0 +1,145 @@
+*
+    box-sizing: border-box
+body
+    font-family: 'Inter', sans-serif
+    margin: 0
+    // ::-webkit-scrollbar
+    //     width: 2px
+    //     background: #808080
+    //     margin-left: 5px
+    // ::-webkit-scrollbar-thumb
+    //     border: 3px solid #FFFFFF
+.container
+    width: 1340px
+    margin: auto
+    overflow: hidden
+h1
+    font-weight: 400
+    font-size: 80px
+    line-height: 105%
+    margin: 0 0 10px 0 
+h2
+    font-weight: 400
+    font-size: 40px
+    line-height: 100%
+    text-transform: uppercase
+    color: #171717
+    margin: 0
+h3
+    font-weight: 400
+    font-size: 40px
+    line-height: 100%
+    color: #171717
+    margin: 0
+.slider
+    &-buttons
+        display: flex
+        width: 90px
+        justify-content: space-between
+        &__left
+            width: 40px
+            height: 40px
+            background-color: #fff
+            border-radius: 43px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid #171717
+            cursor: pointer
+        &__left:hover
+            background-color: #171717
+            .slider
+                &-buttons
+                    &__left
+                        &-arrow
+                            path
+                                fill: #fff
+        &__right
+            width: 40px
+            height: 40px
+            background-color: #fff
+            border-radius: 43px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid #171717
+            cursor: pointer
+            &-arrow
+                transform: scale(-1, 1)
+        &__right:hover
+            background-color: #171717
+            .slider
+                &-buttons
+                    &__right
+                        &-arrow
+                            path
+                                fill: #fff
+.slider
+    &-wrapper
+        margin-top: 40px
+        position: relative
+        overflow: visible
+    &-upper
+        &-wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &-buttons
+        position: absolute
+        top: -80px
+        z-index: 2
+        right: 0
+        &-arrival
+            display: flex
+            justify-content: space-between
+            width: 90px
+.button
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    text-transform: uppercase
+    border-radius: 15px
+    padding: 14px 37px
+    text-decoration: none
+    cursor: pointer
+    align-items: center
+    justify-content: center
+    display: flex
+    &-white
+        color: #171717
+        border: 1px solid #171717
+        background-color: #fff
+    &-white:hover
+        background-color: #171717
+        color: #fff
+    &-black
+        background-color: #171717
+        color: #fff
+        border: 1px solid #171717
+    &-black:hover
+        background-color: inherit
+        color: #171717
+    &-line
+        font-weight: 400
+        font-size: 12px
+        line-height: 14px
+        text-transform: uppercase
+        color: #171717
+        border: none
+        border-bottom: 1px solid #171717
+        padding: 0 0 5px 0
+        background: none
+        margin-left: 20px
+        height: 20px
+        cursor: pointer
+    &-line:hover
+        border-bottom: 1px solid #C4C4C4
+.swiper 
+    overflow: visible !important
+.no-items
+    font-weight: 400
+    font-size: 40px
+    line-height: 150%
+    color: #171717
+    margin: 0
+    margin-top: 60px
