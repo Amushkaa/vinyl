@@ -88,7 +88,7 @@ export default function People() {
           </div>
         </div>
       </div>
-      <div className="container-slider container">
+      <div className="container-slider">
         <div className="people-slider">
           <Swiper
             slidesPerView={4}
