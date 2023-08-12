@@ -1,5 +1,6 @@
-import React from "react";
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
+import React, { useEffect, useRef } from "react";
+import { YMaps, Map, Placemark, useYMaps } from "@pbe/react-yandex-maps";
+import loc from "../../img/loc.svg";
 
 // var myPlacemark = new ymaps.Placemark(
 //   [55.76, 37.56],
@@ -13,6 +14,35 @@ import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 // );
 
 export default function Main() {
+  const mapRef = useRef(null);
+  const ymaps = useYMaps(["Map", "Placemark"]);
+  const placemarkRef = useRef(null);
+
+  useEffect(() => {
+    if (!ymaps || !mapRef.current) {
+      return;
+    }
+
+    const map = new ymaps.Map(mapRef.current, {
+      center: [44.4048, 8.94439],
+      zoom: 14,
+    });
+
+    const placemark = new ymaps.Placemark(
+      [44.4048, 8.94439],
+      {
+        balloonContent: "",
+      },
+      {
+        iconLayout: "default#image",
+        iconImageHref: loc,
+        iconImageSize: [64, 64],
+        iconImageOffset: [-40, -40],
+      }
+    );
+    map.geoObjects.add(placemark);
+  }, [ymaps]);
+
   return (
     <div className="contact">
       <div className="container">
@@ -25,22 +55,9 @@ export default function Main() {
             <span className="contact-text__item">12:00-16:00</span>
             <span className="contact-text__item">sales@vinyl.com</span>
           </div>
-          <YMaps>
-            <div className="contact-map">
-              <Map
-                width={1000}
-                height={455}
-                defaultState={{
-                  center: [44.4048, 8.94439],
-                  zoom: 12,
-                  controls: [],
-                }}
-              >
-                {" "}
-                <Placemark geometry={[44.4048, 8.94439]} />{" "}
-              </Map>
-            </div>
-          </YMaps>
+          <div className="contact-map">
+            <div ref={mapRef} style={{ width: "974px", height: "455px" }}></div>
+          </div>
         </div>
       </div>
     </div>

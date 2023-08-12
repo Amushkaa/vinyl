@@ -66,3 +66,46 @@
             max-height: 355px
             &-wrapper
                 margin-top: 40px
+.person
+    &-image
+        width: 100%
+        height: auto
+        filter: grayscale(1)
+        &-wrapper
+            height: 340px
+            overflow: hidden
+    &-image:hover
+        filter: grayscale(0)
+    &-name
+        max-width: 100%
+        margin-top: 20px
+        color: #171717
+        font-size: 18px
+        font-weight: 600
+    &-position
+        color: #8F8F8F
+        font-size: 12px
+        font-weight: 400
+        margin-top: 10px
+.people
+    &-wrapper
+        margin-top: 150px
+        overflow: visible
+        &-upper
+            display: flex
+            justify-content: space-between
+            &-text
+                max-width: 730px
+                color: #8F8F8F
+                font-size: 16px
+                font-weight: 400
+                line-height: 130%
+    &-slider
+        margin-top: 40px
+        overflow: visible
+.swiper
+    overflow: visible
+    &-wrapper
+        overflow: visible
+    &-slide
+        max-width: 280px
