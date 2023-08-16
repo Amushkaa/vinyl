@@ -9,17 +9,19 @@ export default function Main() {
   return (
     <>
       <div className="main">
-        <div className="main-video">
-          <video
-            autoPlay="autoplay"
-            muted="muted"
-            loop="loop"
-            playsInline=""
-            className="video"
-          >
-            {" "}
-            <source src={video} type="video/mp4" />
-          </video>
+        <div className="main-video-mask">
+          <div className="main-video">
+            <video
+              autoPlay="autoplay"
+              muted="muted"
+              loop="loop"
+              playsInline=""
+              className="video"
+            >
+              {" "}
+              <source src={video} type="video/mp4" />
+            </video>
+          </div>
         </div>
         <div className="main-container">
           <h1>Begin your vinyl adventure with us</h1>
