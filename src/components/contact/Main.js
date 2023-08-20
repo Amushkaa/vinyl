@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { YMaps, Map, Placemark, useYMaps } from "@pbe/react-yandex-maps";
 import loc from "../../img/loc.svg";
 
@@ -17,6 +17,7 @@ export default function Main() {
   const mapRef = useRef(null);
   const ymaps = useYMaps(["Map", "Placemark"]);
   const placemarkRef = useRef(null);
+  const mapWidth = useState(974);
 
   useEffect(() => {
     if (!ymaps || !mapRef.current) {
@@ -56,7 +57,10 @@ export default function Main() {
             <span className="contact-text__item">sales@vinyl.com</span>
           </div>
           <div className="contact-map">
-            <div ref={mapRef} style={{ width: "974px", height: "455px" }}></div>
+            <div
+              ref={mapRef}
+              style={{ width: `${mapWidth}px`, height: "455px" }}
+            ></div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Main from "../components/home/Main";
 import Slider from "../components/Slider";
 import { useLocation } from "react-router-dom";
+import SliderArrivals from "../components/SliderArrivals";
 
 export default function Home() {
   const { pathname } = useLocation();
