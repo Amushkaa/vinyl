@@ -43,7 +43,9 @@ export default function MainPart() {
                 <div className="bag-line"></div>
                 <div className="bag-wrapper-single">
                   <div className="bag-wrapper-image">
-                    <img src={sample.image} className="bag-image" />
+                    <div className="bag-image-wrapper">
+                      <img src={sample.image} className="bag-image" />
+                    </div>
                     <div className="bag-wrapper-text">
                       <div className="card-header">{sample.artist}</div>
                       <div className="card-text">{sample.title}</div>

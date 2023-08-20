@@ -5,6 +5,7 @@
     height: 620px
     display: flex
     justify-content: flex-end
+    animation: swing-in-left-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
     &-wrap
         display: flex
         justify-content: center
@@ -17,6 +18,7 @@
         font-weight: 400
         line-height: 105%
         margin: 0
+        animation: swing-in-left-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
     &-text
         color: #FFF
         font-size: 20px
@@ -24,6 +26,7 @@
         margin-top: 45px
         line-height: 120%
         max-width: 455px
+        animation: swing-in-left-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
 .about
     &-container
         margin-top: 150px
@@ -38,6 +41,7 @@
             &-wrapper
                 display: flex
                 flex-direction: column
+                margin-top: 30px
         &-right
             max-width: 730px
             &-wrapper
@@ -55,18 +59,25 @@
                     margin-bottom: 10px        
     &-image
         &__first
-            max-width: 397px
-            max-height: 264px
+            width: 100%
+            height: auto
+            &-wrapper
+                max-width: 397px
+                max-height: 264px
+                overflow: hidden
         &__desc
             color: #8F8F8F
             font-size: 16px
             font-weight: 400
             margin-top: 20px
         &__second
-            max-width: 730px
-            max-height: 355px
+            width: 100%
+            height: auto
             &-wrapper
                 margin-top: 40px
+                max-width: 730px
+                max-height: 355px
+                overflow: hidden
 .person
     &-image
         width: 100%
@@ -92,7 +103,7 @@
     &-wrapper
         margin-top: 150px
         overflow: visible
-        width: 1340px
+        max-width: 1340px
         margin: auto
         &-upper
             display: flex

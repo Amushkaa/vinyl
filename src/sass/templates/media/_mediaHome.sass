@@ -35,8 +35,11 @@
     .header
         &-menu
             display: none
-            &-mobile
-                display: block
+        &-icons
+            align-items: center
+            &__menu
+                &-mobile
+                    display: block
     .main
         &-container
             width: 100%
@@ -83,6 +86,11 @@
             margin: 70px 20px 50px 20px
         h1
             font-size: 68px
+        &-video
+            height: 550px
+        &-order
+            right: 50%
+            translate: (50%)
     .about
         &-wrapper
             flex-direction: column
@@ -162,3 +170,12 @@
     .main
         h1
             width: 335px
+    .header
+        &-icons
+            &__item
+                &-search
+                    display: none
+            &-input
+                &-white
+                    display: none
+

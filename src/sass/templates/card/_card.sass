@@ -2,14 +2,21 @@
     &-card
         margin-top: 40px
         display: flex
+        width: 100%
+        justify-content: space-between
+        gap: 20px
         &-wrapper
-            margin-left: 67px
+            max-width: 50%
         &-image
-            width: 582px
-            height: 582px
-            position: sticky
-            position: -webkit-sticky
-            top: 15px
+            width: 100%
+            height: auto
+            &-wrapper
+                max-width: 582px
+                min-width: 300px
+                max-height: 582px
+                min-height: 300px
+                flex-shrink: 2
+
         &-art
             font-weight: 400
             font-size: 16px

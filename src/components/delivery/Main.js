@@ -4,8 +4,8 @@ import image from "../../img/arrow-del.png";
 export default function Main() {
   return (
     <div className="delivery-main">
-      <img src={image} className="delivery-image-arrow" />
       <div className="container">
+        <img src={image} className="delivery-image-arrow" />
         <h2 className="delivery-h2">Delivery & payment</h2>
         <p className="delivery-main-header">
           Since this is not a real online store, I attach instructions written

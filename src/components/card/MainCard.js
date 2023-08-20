@@ -44,7 +44,9 @@ export default function MainCard() {
       </div>
       <div className="container">
         <div className="main-card">
-          <img src={card.image2} className="main-card-image" />
+          <div className="main-card-image-wrapper">
+            <img src={card.image2} className="main-card-image" />
+          </div>
           <div className="main-card-wrapper">
             <div className="main-card-header-wrapper">
               <div className="main-card-art">art: {card.id}</div>
